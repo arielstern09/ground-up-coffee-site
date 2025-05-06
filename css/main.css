@@ -1,0 +1,239 @@
+:root{
+   --primary-color: #794635; 
+   --primary-max-width: 1000px;
+   --primary-spacing-large: 200px;
+   --primary-spacing-small: 100px;
+}
+
+
+img { max-width: 100%; vertical-align: middle; border: 0; 
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #555;
+	margin: 0;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+
+}
+
+.p{
+    font-size: 1.2em;
+    line-height: 1.1;
+    text-align: center;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-color);
+    font-size: 2rem;
+	line-height: 0.9;
+	margin: 0;
+	margin-bottom: .2em;
+}
+
+p{
+    margin: 0;
+}
+
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 65vh;
+    background-image: linear-gradient( brown, #a52a2a73, rgba(0,0,0, .2)), url(../images/ground-up-coffee-shop-2600x1300.jpg);
+    background-position: center;
+	background-size: cover;
+}
+
+img.mainlogo{
+    width: 200px;   
+}
+
+nav{
+    background: #000;
+    padding: 10px;
+}
+
+main{
+    padding: 0 40px
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px
+
+}
+
+.intro p{
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.intro h2{
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0%;
+    line-height: 1.1;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.logo{
+    display: inline-block;
+    width: 80px;
+    padding: 20px;
+}
+
+
+section img{
+    min-width: 0;
+    
+}
+
+section {
+    width: 800px;
+    max-width: var(--primary-max-width);
+    display: flex;
+    margin: 20px auto;
+}
+section:first-of-type {
+    margin-top: calc(var(--section-spacing-large)*.7);
+}
+section .maintext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section .maintext p {
+    margin: 0;
+}
+section:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+section:nth-of-type(even) {
+    text-align: right;
+}
+section > *  {
+    flex-basis: 50%;
+    margin: 20px;
+    
+}
+
+.menu{
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    margin: 0px auto;
+    width:800px;
+    align-items: center;
+    justify-content: center;
+    max-width: var(--primary-max-width);
+    color: #fff;
+}
+
+#drink, #food{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    padding-bottom: 15px;
+    background-size: cover;
+}
+
+#drink{
+    background-image: url(../images/glass-of-iced-coffee.png);
+}
+
+#food{
+    background-image: url(../images/egg-on-toast.png);
+}
+
+footer{
+    border-top: #794635 solid 1px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+footer a {
+	text-decoration: none;
+    padding: 20px;   
+    margin: auto 0;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: currentColor;
+    margin: 0px auto;
+    width:800px;
+}
+
+.x, .facebook, .instagram {
+    padding: 10px;
+    margin: auto 0;
+    border-radius: 0px;
+    background-color: #fff;
+
+}
+
+.social a{
+    color: #794635;
+    
+    
+}
+
+.social a :hover, :focus{
+    background-color: #000000;
+    fill: white;
+     border: #000  solid 2px;
+    margin: 0 auto;
+    border-radius: 40px;
+    
+}
+
+.contact, ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    gap: 80px;
+    margin: 0px auto;
+    width:800px;
+    padding: 10px;
+    color: #794635;
+}
+
+ul {
+    list-style: none;
+
+}
+
+
+
+
+
+
+
+
+
+

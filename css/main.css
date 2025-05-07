@@ -178,38 +178,87 @@ footer a {
     margin: auto 0;
 }
 
-.social{
-    display: flex;
+.containter{
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    color: currentColor;
-    margin: 0px auto;
-    width:800px;
-}
+    margin: auto 500px;
+  }
 
-.x, .facebook, .instagram {
-    padding: 10px;
-    margin: auto 0;
-    border-radius: 0px;
-    background-color: #fff;
-
-}
-
-.social a{
-    color: #794635;
-    
-    
-}
-
-.social a :hover, :focus{
-    background-color: #000000;
-    fill: white;
-     border: #000  solid 2px;
+.icon-container {
+    display: inline-block;
     margin: 0 auto;
-    border-radius: 40px;
+    width: 100px;
+    height: 10%;
+    padding: 10px;
+  }
+
+  svg{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    padding: 10px, 10px;
+  }
+
+  .icon {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+    border-radius: 30px;
+    overflow: hidden;
+    size-adjust: auto;
+  }
+  .icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease;
+    border-radius: 30px;
+  }
+
+  .icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease;
+    border-radius: 30px;
+    color: white;
+  }
+  .icon i {
+    position: relative;
+    color: #794635;
+    font-size: 30px;
+    margin-top: 15px;
+    transition: all 0.25s ease;
+  }
+  
+  .icon-fill::before {
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 0  #794635;
     
-}
+  }
+  .icon-fill:hover::before {
+    box-shadow: inset 0 0 0 60px #794635;
+    transition-duration: 0.5s;
+   
+  }
+  
+    .icon-fill:hover i {
+        color: #fff;
+    }
+
 
 .contact, ul{
     display: flex;
